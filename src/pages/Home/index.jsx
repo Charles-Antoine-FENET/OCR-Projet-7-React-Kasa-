@@ -1,15 +1,25 @@
-import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+import HomeBanner from '../../components/Banners/HomeBanner.jsx'
+
+const HomeWrapper = styled.main`
+height: 100vh;
+padding: 30px;
+
+`
+
+const HomeContainer = styled.div`
+`
+
+
 
 
 function Home() {
   return (
-    <div>
-      <h1>Kasa</h1>
-      <nav>
-        <Link to="/Accommodation">Logement</Link>
-        <Link to="/About">A Propos</Link>
-      </nav>
-    </div>
+    <HomeWrapper>
+      <HomeContainer>
+        <HomeBanner/>
+      </HomeContainer>
+    </HomeWrapper>
   )
 }
 

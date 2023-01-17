@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { StyledLink } from '../../utils/style/Atoms'
-import DarkLogo from '../../assets/dark-logo.png'
+import Logo from '../../assets/logo_primary.png'
 
-const HomeLogo = styled.img`
-  height: 70px;
+const HeaderLogo = styled.img`
+  height: 40px;
 `
 
 const NavContainer = styled.header`
@@ -18,14 +18,11 @@ function Header() {
   return (
     <NavContainer>
       <Link to="/">
-        <HomeLogo src={DarkLogo} />
+        <HeaderLogo src={Logo} />
       </Link>
       <nav>
         <StyledLink to="/">Accueil</StyledLink>
-        <StyledLink to="/freelances">Profils</StyledLink>
-        <StyledLink to="/survey/1" $isFullLink>
-          Faire le test
-        </StyledLink>
+        <StyledLink to="/about">A Propos</StyledLink>
       </nav>
     </NavContainer>
   )
