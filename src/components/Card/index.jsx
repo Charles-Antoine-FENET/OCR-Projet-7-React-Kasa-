@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const CardTitle = styled.span`
   color: black;
@@ -31,10 +32,12 @@ const CardWrapper = styled.div`
 
 function Card({image, title}) {
   return (
+    <Link to="/accommodation">
     <CardWrapper>
       <CardImage src= {image} alt="freelance" />
       <CardTitle>{title}</CardTitle>
     </CardWrapper>
+    </Link>
   )
 }
 

@@ -6,12 +6,11 @@ import Logo from '../../assets/logo_primary.png'
 import colors from '../../utils/style/colors'
 
 const CardsContainer = styled.div`
-  display: grid;
-  gap: 24px;
-  grid-template-rows: 350px 350px;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap:wrap;
+  row-gap: 24px;
   align-items: center;
-  justify-items: center;
+  justify-content: space-around;
   background-color: ${colors.backgroundLight};
   border-radius: 25px;
   padding: 25px;
