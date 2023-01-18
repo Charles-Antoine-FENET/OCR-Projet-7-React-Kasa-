@@ -11,6 +11,7 @@ const FooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   padding: 30px;
+  margin-top: 100px;
 `
 
 const CopyrightText = styled.p`

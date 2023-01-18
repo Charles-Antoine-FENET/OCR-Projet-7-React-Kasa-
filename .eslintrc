@@ -1,0 +1,8 @@
+{
+    "plugins": [
+        "styled-components"
+    ],
+    "extends": [
+        "plugin:styled-components/recommended"
+    ]
+}
