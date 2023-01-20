@@ -1,4 +1,4 @@
-import AboutBannerIllustration from '../../assets/AboutBanner.jpg'
+import AboutBannerIllustration from '../../../assets/AboutBanner.jpg'
 import styled from 'styled-components'
 
 const BannerContainer = styled.div`

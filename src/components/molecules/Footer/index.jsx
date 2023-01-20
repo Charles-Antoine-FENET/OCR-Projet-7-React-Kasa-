@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import LightLogo from '../../assets/logo_secondary.png'
+import LightLogo from '../../../assets/logo_secondary.png'
 
 const FooterLogo = styled.img`
   height: 40px;

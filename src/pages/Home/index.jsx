@@ -1,10 +1,9 @@
-import Card from '../../components/Card'
+import Card from '../../components/molecules/Card'
 import styled from 'styled-components'
-import HomeBanner from '../../components/Banners/HomeBanner.jsx'
+import HomeBanner from '../../components/molecules/Banners/HomeBanner.jsx'
 import HomeBannerIllustration from '../../assets/HomeBanner.jpg'
 import Logo from '../../assets/logo_primary.png'
 import colors from '../../utils/style/colors'
-
 
 const CardsContainer = styled.div`
   display: flex;

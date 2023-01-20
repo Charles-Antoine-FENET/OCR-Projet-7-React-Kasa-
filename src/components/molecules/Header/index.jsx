@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { StyledLink } from '../../utils/style/Atoms'
-import Logo from '../../assets/logo_primary.png'
+import { StyledLink } from '../../../utils/style/Atoms'
+import Logo from '../../../assets/logo_primary.png'
 
 const HeaderLogo = styled.img`
   height: 40px;
