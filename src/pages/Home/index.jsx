@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import HomeBanner from '../../components/molecules/Banners/HomeBanner.jsx'
 import HomeBannerIllustration from '../../assets/HomeBanner.jpg'
 import Logo from '../../assets/logo_primary.png'
-import colors from '../../utils/style/colors'
+import {colors} from '../../components/atoms'
 
 const CardsContainer = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ const CardsContainer = styled.div`
   row-gap: 24px;
   align-items: center;
   justify-content: space-around;
-  background-color: ${colors.backgroundLight};
+  background-color: ${colors.lightGrey};
   border-radius: 25px;
   padding: 25px;
   margin: 50px 0px;

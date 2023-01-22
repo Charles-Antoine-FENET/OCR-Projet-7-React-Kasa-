@@ -1,30 +1,24 @@
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
-import { StyledLink } from '../../../utils/style/Atoms'
-import Logo from '../../../assets/logo_primary.png'
-
-const HeaderLogo = styled.img`
-  height: 40px;
-`
-
-const NavContainer = styled.header`
-  padding: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
+import kasaTexts from '../../atoms/texts'
+import {
+  HeaderContainer,
+  LogoPrimary,
+  NavContainer,
+  StyledLink,
+} from '../../atoms'
+import LogoHeader from '../../../assets/logo_primary.png'
 
 function Header() {
   return (
-    <NavContainer>
+    <HeaderContainer>
       <Link to="/">
-        <HeaderLogo src={Logo} />
+        <LogoPrimary src={LogoHeader} />
       </Link>
-      <nav>
-        <StyledLink to="/">Accueil</StyledLink>
-        <StyledLink to="/about">A Propos</StyledLink>
-      </nav>
-    </NavContainer>
+      <NavContainer>
+        <StyledLink to="/">{kasaTexts.navHome}</StyledLink>
+        <StyledLink to="/about">{kasaTexts.navAbout}</StyledLink>
+      </NavContainer>
+    </HeaderContainer>
   )
 }
 
