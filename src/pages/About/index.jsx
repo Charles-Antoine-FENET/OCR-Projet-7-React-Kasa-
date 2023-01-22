@@ -1,4 +1,4 @@
-import Banner from '../../components/Banners/AboutBanner'
+import Banner from '../../components/molecules/Banners/AboutBanner'
 
 function About() {
   return (
