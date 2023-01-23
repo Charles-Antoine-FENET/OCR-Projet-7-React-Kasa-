@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import AboutBannerIllustration from '../../assets/AboutBanner.jpg'
 import HomeBannerIllustration from '../../assets/HomeBanner.jpg'
 
@@ -93,6 +93,25 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   font-size: 24px;
   text-align: center;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+`
+
+export const StyledNavLink = styled(NavLink)`
+  padding: 10px 25px;
+  color: ${colors.primary};
+  text-decoration: none;
+  font-size: 24px;
+  text-align: center;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  &.active {
+    text-decoration: underline;
+  }
 `
 
 //
@@ -111,7 +130,6 @@ export const HomeBannerContainer = styled.div`
     url(${HomeBannerIllustration});
   background-size: cover;
 `
-
 
 export const AccommodationGalleryContainer = styled.div`
   border-radius: 25px;
