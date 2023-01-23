@@ -6,7 +6,7 @@ function Card({ image, title }) {
   return (
     <Link to="/accommodation">
       <AccommodationCard>
-        <CardImage src={image} alt="freelance" />
+        <CardImage src={image} alt="Accommodation" />
         <CardTitle>{title}</CardTitle>
       </AccommodationCard>
     </Link>
