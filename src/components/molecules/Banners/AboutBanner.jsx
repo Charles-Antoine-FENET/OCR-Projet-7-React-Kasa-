@@ -1,7 +1,4 @@
-
-import {AccommodationGalleryContainer} from '../../atoms'
-
-
+import { AccommodationGalleryContainer } from '../../atoms'
 
 function AboutBanner() {
   return <AccommodationGalleryContainer />

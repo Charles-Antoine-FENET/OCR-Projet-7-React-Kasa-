@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link, NavLink } from 'react-router-dom'
-import AboutBannerIllustration from '../../assets/AboutBanner.jpg'
-import HomeBannerIllustration from '../../assets/HomeBanner.jpg'
+import AboutBannerIllustration from '../../assets/img/AboutBanner.jpg'
+import HomeBannerIllustration from '../../assets/img/HomeBanner.jpg'
 
 //
 //
@@ -17,9 +17,10 @@ export const LogoSecondary = styled.img`
 `
 
 export const CardImage = styled.img`
-
-  widht: 100%;
+  width: 340px;
+  height: 340px;
   object-fit: cover;
+  border-radius: 10px;
 `
 
 //
@@ -54,11 +55,16 @@ export const HomeTitle = styled.h1`
   color: ${colors.secondary};
 `
 export const CardTitle = styled.h2`
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
   color: black;
   font-size: 22px;
   font-weight: normal;
   align-self: center;
   text-decoration: none;
+  padding: 0px;
+  margin: 0px;
 `
 
 export const AccommodationTitle = styled.h3`
@@ -88,15 +94,16 @@ export const CopyrightText = styled.p`
 // Links
 //
 //
-export const StyledLink = styled(Link)`
-  padding: 10px 25px;
+export const StyledCardLink = styled(Link)`
+  position: relative;
   color: ${colors.primary};
   text-decoration: none;
   font-size: 24px;
   text-align: center;
+  background: red;
+  border-radius: 10px;
   &:hover {
     cursor: pointer;
-    text-decoration: underline;
   }
 `
 
@@ -167,9 +174,11 @@ export const FooterContainer = styled.footer`
   padding: 30px;
 `
 
-export const CardsContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+export const CardsContainer = styled.ul`
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   row-gap: 24px;
   align-items: center;
   justify-content: space-around;
@@ -179,14 +188,11 @@ export const CardsContainer = styled.div`
   margin: 50px 0px;
 `
 
-export const AccommodationCard = styled.div`
+export const AccommodationCard = styled.li`
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  padding: 15px;
   border-radius: 10px;
-  width: 300px;
-  height: 300px;
+  width: 100%;
   transition: 200ms;
   &:hover {
     cursor: pointer;

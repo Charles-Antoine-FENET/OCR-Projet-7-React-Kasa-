@@ -6,7 +6,7 @@ import {
   NavContainer,
   StyledNavLink,
 } from '../../atoms'
-import LogoHeader from '../../../assets/logo_primary.png'
+import LogoHeader from '../../../assets/img/logo_primary.png'
 
 function Header() {
   return (

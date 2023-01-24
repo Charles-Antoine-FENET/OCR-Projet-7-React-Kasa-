@@ -1,15 +1,13 @@
-import { Link } from 'react-router-dom'
-import { AccommodationCard, CardImage, CardTitle } from '../../atoms'
-
+import { AccommodationCard, CardImage, CardTitle, StyledCardLink} from '../../atoms'
 
 function Card({ title, image }) {
   return (
-    <Link to="/accommodation">
-      <AccommodationCard>
+    <AccommodationCard>
+      <StyledCardLink to="/accommodation">
         <CardImage src={image} alt="freelance" />
         <CardTitle>{title}</CardTitle>
-      </AccommodationCard>
-    </Link>
+      </StyledCardLink>
+    </AccommodationCard>
   )
 }
 
