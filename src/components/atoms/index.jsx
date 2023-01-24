@@ -17,9 +17,9 @@ export const LogoSecondary = styled.img`
 `
 
 export const CardImage = styled.img`
-  height: 15px;
-  widht: 15px;
-  align-self: center;
+
+  widht: 100%;
+  object-fit: cover;
 `
 
 //
@@ -53,11 +53,12 @@ export const HomeTitle = styled.h1`
   font-size: 48px;
   color: ${colors.secondary};
 `
-export const CardTitle = styled.span`
+export const CardTitle = styled.h2`
   color: black;
   font-size: 22px;
   font-weight: normal;
   align-self: center;
+  text-decoration: none;
 `
 
 export const AccommodationTitle = styled.h3`
@@ -183,7 +184,6 @@ export const AccommodationCard = styled.div`
   flex-direction: column;
   justify-content: space-around;
   padding: 15px;
-  background-color: violet;
   border-radius: 10px;
   width: 300px;
   height: 300px;
