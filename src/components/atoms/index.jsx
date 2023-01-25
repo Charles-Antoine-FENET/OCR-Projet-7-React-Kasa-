@@ -5,6 +5,17 @@ import HomeBannerIllustration from '../../assets/img/HomeBanner.jpg'
 
 //
 //
+// GlobalStyle Wraper and font
+//
+//
+export const GlobalStyle = styled.div`
+  max-width: 1340px;
+  width: 100%;
+  margin: 0px auto;
+`
+
+//
+//
 // Logos images, images and pictograms
 //
 //
@@ -57,11 +68,11 @@ export const HomeTitle = styled.h1`
 export const CardTitle = styled.h2`
   position: absolute;
   bottom: 30px;
-  left: 20px;
-  color: black;
-  font-size: 22px;
+  left: 10px;
+  text-align: start;
+  color: ${colors.secondary};
+  font-size: 18px;
   font-weight: normal;
-  align-self: center;
   text-decoration: none;
   padding: 0px;
   margin: 0px;
@@ -95,7 +106,9 @@ export const CopyrightText = styled.p`
 //
 //
 export const StyledCardLink = styled(Link)`
+  display: flex;
   position: relative;
+  height: inherit;
   color: ${colors.primary};
   text-decoration: none;
   font-size: 24px;
@@ -175,11 +188,12 @@ export const FooterContainer = styled.footer`
 `
 
 export const CardsContainer = styled.ul`
-  // display: flex;
-  // flex-wrap: wrap;
-  display: grid;
-  grid-template-columns: repeat(3, 340px);
+  display: flex;
+  flex-wrap: wrap;
+  // display: grid;
+  // grid-template-columns: repeat(3, 340px);
   row-gap: 24px;
+  column-gap: 40px;
   align-items: center;
   justify-content: space-around;
   background-color: ${colors.lightGrey};
@@ -189,11 +203,9 @@ export const CardsContainer = styled.ul`
 `
 
 export const AccommodationCard = styled.li`
-  display: flex;
-  justify-content: space-around;
   border-radius: 10px;
-  width: 100%;
   transition: 200ms;
+  list-style-type: none;
   &:hover {
     cursor: pointer;
     box-shadow: 2px 2px 10px blue;
