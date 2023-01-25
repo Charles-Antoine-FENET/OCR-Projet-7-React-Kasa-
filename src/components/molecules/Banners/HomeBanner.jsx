@@ -1,10 +1,10 @@
+import { HomeBannerContainer, HomeTitle } from '../../atoms'
+import kasaTexts from '../../atoms/texts'
 
-import {HomeBannerContainer, HomeTitle} from '../../atoms'
-
-function HomeBanner({ text }) {
+function HomeBanner() {
   return (
     <HomeBannerContainer>
-      <HomeTitle>{text}</HomeTitle>
+      <HomeTitle>{kasaTexts.HomeHeadingTitle}</HomeTitle>
     </HomeBannerContainer>
   )
 }

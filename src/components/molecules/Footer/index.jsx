@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import FooterLogo from '../../../assets/logo_secondary.png'
+import FooterLogo from '../../../assets/img/logo_secondary.png'
 import { FooterContainer, LogoPrimary, CopyrightText } from '../../atoms/index'
 import kasaTexts from '../../atoms/texts'
 

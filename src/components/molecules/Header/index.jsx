@@ -4,9 +4,9 @@ import {
   HeaderContainer,
   LogoPrimary,
   NavContainer,
-  StyledLink,
+  StyledNavLink,
 } from '../../atoms'
-import LogoHeader from '../../../assets/logo_primary.png'
+import LogoHeader from '../../../assets/img/logo_primary.png'
 
 function Header() {
   return (
@@ -15,8 +15,16 @@ function Header() {
         <LogoPrimary src={LogoHeader} />
       </Link>
       <NavContainer>
-        <StyledLink to="/">{kasaTexts.navHome}</StyledLink>
-        <StyledLink to="/about">{kasaTexts.navAbout}</StyledLink>
+        <StyledNavLink
+          to="/"
+        >
+          {kasaTexts.navHome}
+        </StyledNavLink>
+        <StyledNavLink
+          to="/about"
+        >
+          {kasaTexts.navAbout}
+        </StyledNavLink>
       </NavContainer>
     </HeaderContainer>
   )
