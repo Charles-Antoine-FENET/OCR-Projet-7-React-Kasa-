@@ -12,6 +12,7 @@ export const GlobalStyle = styled.div`
   max-width: 1340px;
   width: 100%;
   margin: 0px auto;
+  font-family: 'Montserrat';
 `
 
 //
@@ -210,4 +211,13 @@ export const AccommodationCard = styled.li`
     cursor: pointer;
     box-shadow: 2px 2px 10px blue;
   }
+`
+
+export const Collapse = styled.div`
+  height:47px;
+  border-radius:5px;
+  background-color: ${colors.primary};
+  color:${colors.secondary}
+  border-radius: 10px;
+
 `

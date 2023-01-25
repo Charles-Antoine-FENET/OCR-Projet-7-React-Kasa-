@@ -5,16 +5,8 @@ import Accommodation from './pages/Accomodation'
 import About from './pages/About'
 import Header from './components/molecules/Header'
 import Footer from './components/molecules/Footer'
-import styled from 'styled-components'
+import {GlobalStyle} from './components/atoms/index'
 
-// import GlobalStyle from './components/atoms/index'
-
-export const GlobalStyle = styled.div`
-  max-width: 1340px;
-  width: 100%;
-  margin: 0px auto;
-  font-family: 'Montserrat';
-`
 
 function Router() {
   return (

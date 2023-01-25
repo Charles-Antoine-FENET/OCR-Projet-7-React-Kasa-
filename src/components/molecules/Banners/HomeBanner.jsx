@@ -1,5 +1,5 @@
 import { HomeBannerContainer, HomeTitle } from '../../atoms'
-import kasaTexts from '../../atoms/texts'
+import {kasaTexts} from '../../atoms/texts'
 
 function HomeBanner() {
   return (

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import kasaTexts from '../../atoms/texts'
+import {kasaTexts} from '../../atoms/texts'
 import {
   HeaderContainer,
   LogoPrimary,
