@@ -12,6 +12,7 @@ export const GlobalStyle = styled.div`
   max-width: 1340px;
   width: 100%;
   margin: 0px auto;
+  font-family: 'Montserrat';
 `
 
 //
