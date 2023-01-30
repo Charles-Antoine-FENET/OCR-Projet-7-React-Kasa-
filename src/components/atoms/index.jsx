@@ -170,15 +170,16 @@ export const AccommodationGalleryContainer = styled.div`
 //
 //
 
-export const HeaderContainer = styled.header`
-  background-color: ${colors.secondary};
-  padding: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
+// export const HeaderContainer = styled.header`
+//   background-color: ${colors.secondary};
+//   padding: 30px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// `
 
 export const NavContainer = styled.nav``
+
 
 export const FooterContainer = styled.footer`
   background-color: ${colors.tertiary};
