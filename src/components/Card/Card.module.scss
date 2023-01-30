@@ -27,14 +27,11 @@
 }
 
 .styledCardLink{
-  display: flex;
   position: relative;
   height: inherit;
   color: var(--primary);
-  text-decoration: none;
   font-size: 24px;
   text-align: center;
-  background: red;
   border-radius: 10px;
   &:hover {
     cursor: pointer;

@@ -4,7 +4,7 @@ import styles from './Card.module.scss'
 function Card({ title, image }) {
   return (
     <li className={styles.accommodationCard}>
-      <Link to="/accommodation" className={styles.styledCardLink}>
+      <Link to="/accommodation" className={`${styles.styledCardLink} d-flex`}>
         <img src={image} alt="" />
         <h2>{title}</h2>
       </Link>

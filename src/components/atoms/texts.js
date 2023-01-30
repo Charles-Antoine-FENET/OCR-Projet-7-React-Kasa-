@@ -7,6 +7,7 @@ const kasaTexts = {
   errorFallback: "Retourner sur la page d'accueil",
   copyrightTxt: '© 2020 Kasa. All rights reserved',
   logoAlt: 'Logo Kasa',
+  collapseTest:"voici le texte de la Collapse"
 }
 
 export default kasaTexts

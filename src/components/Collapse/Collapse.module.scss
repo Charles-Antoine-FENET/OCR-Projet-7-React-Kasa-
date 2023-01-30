@@ -1,0 +1,22 @@
+.collapseContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  border: 2px solid red;
+  background-color: var(--primary);
+  padding: 15px;
+
+  img {
+    height: 14.06px;
+  }
+}
+
+.collapseDetails {
+  background-color: var(--darkGrey);
+  padding: 40px;
+  margin: 0px;
+  font-size: 24px;
+  color: var(--primary);
+}

@@ -1,9 +1,11 @@
-import Banner from '../../components/molecules/Banners/AboutBanner'
+// import Banner from '../../components/molecules/Banners/AboutBanner'
+import Collapse from '../../components/Collapse/Collapse'
 
 function About() {
   return (
     <main>
-      <Banner />
+      {/* <Banner /> */}
+      <Collapse/>
     </main>
   )
 }

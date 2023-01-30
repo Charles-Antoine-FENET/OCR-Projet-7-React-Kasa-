@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link, NavLink } from 'react-router-dom'
-import AboutBannerIllustration from '../../assets/img/AboutBanner.jpg'
-import HomeBannerIllustration from '../../assets/img/HomeBanner.jpg'
+import AboutBannerIllustration from '../../assets/img/aboutBanner.jpg'
+import HomeBannerIllustration from '../../assets/img/homeBanner.jpg'
 
 //
 //
