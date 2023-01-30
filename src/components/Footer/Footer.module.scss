@@ -1,0 +1,11 @@
+.footerContainer {
+  background-color: var(--tertiary);
+  align-items: center;
+  padding: 30px;
+  img {
+    height: 40px;
+  }
+  p {
+    color: var(--secondary);
+  }
+}

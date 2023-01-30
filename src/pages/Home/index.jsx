@@ -1,5 +1,5 @@
-import HomeBanner from '../../components/molecules/Banners/HomeBanner'
-import HomeGallery from '../../components/organisms/Galery'
+import HomeBanner from '../../components/Banner/Banner'
+import HomeGallery from '../../components/Gallery/Gallery'
 
 function Home() {
   return (

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import LogoHeader from '../assets/img/logo_primary.png'
+import LogoHeader from '../../assets/img/logo_primary.png'
 import NavContainer from './NavContainer'
 import styles from './Header.module.scss'
 

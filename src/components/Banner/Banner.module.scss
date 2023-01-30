@@ -1,0 +1,16 @@
+.bannerContainer {
+  border-radius: 25px;
+  height: 223px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../assets/img/HomeBanner.jpg);
+  background-size: cover;
+  h1 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 48px;
+    color: var(--secondary);
+  }
+}
