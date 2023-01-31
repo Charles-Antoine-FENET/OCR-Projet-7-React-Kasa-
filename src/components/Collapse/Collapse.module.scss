@@ -1,0 +1,22 @@
+.collapseContainer {
+  margin: 30px 100px;
+}
+
+.collapseTitle {
+  border-radius: 5px;
+  color: var(--secondary);
+  background-color: var(--primary);
+  padding: 15px;
+
+  img {
+    height: 14.06px;
+    cursor: pointer;
+  }
+}
+
+.collapseDetails {
+  background-color: var(--lightGrey);
+  padding: 40px;
+  font-size: 24px;
+  color: var(--primary);
+}

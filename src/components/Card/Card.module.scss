@@ -1,0 +1,39 @@
+.accommodationCard{
+    border-radius: 10px;
+    transition: 200ms;
+    list-style-type: none;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 2px 2px 10px red;
+    }
+    img{
+      width: 340px;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    h2{
+      position: absolute;
+      bottom: 30px;
+      left: 10px;
+      text-align: start;
+      color: var(--secondary);
+      font-size: 18px;
+      font-weight: normal;
+      text-decoration: none;
+      padding: 0px;
+      margin: 0px;
+    }
+}
+
+.styledCardLink{
+  position: relative;
+  height: inherit;
+  color: var(--primary);
+  font-size: 24px;
+  text-align: center;
+  border-radius: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}

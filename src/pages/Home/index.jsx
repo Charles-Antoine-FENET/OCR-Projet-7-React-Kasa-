@@ -1,10 +1,12 @@
-import HomeBanner from '../../components/molecules/Banners/HomeBanner'
-import HomeGallery from '../../components/organisms/Galery'
+import Banner from '../../components/Banner/Banner'
+import HomeGallery from '../../components/Gallery/Gallery'
+import homeBannerImg from '../../assets/img/homeBanner.jpg'
+import kasaTexts from '../../datas/texts'
 
 function Home() {
   return (
-    <main>
-      <HomeBanner />
+    <main className="wrapper">
+      <Banner title={kasaTexts.HomeHeadingTitle} image={homeBannerImg}/>
       <HomeGallery />
     </main>
   )

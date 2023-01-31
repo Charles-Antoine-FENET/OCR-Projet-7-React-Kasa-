@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link, NavLink } from 'react-router-dom'
-import AboutBannerIllustration from '../../assets/img/AboutBanner.jpg'
-import HomeBannerIllustration from '../../assets/img/HomeBanner.jpg'
+import AboutBannerIllustration from '../../assets/img/aboutBanner.jpg'
+import HomeBannerIllustration from '../../assets/img/homeBanner.jpg'
 
 //
 //
@@ -10,8 +10,10 @@ import HomeBannerIllustration from '../../assets/img/HomeBanner.jpg'
 //
 export const GlobalStyle = styled.div`
   max-width: 1340px;
+  height: 100vh;
   width: 100%;
   margin: 0px auto;
+  font-family: 'Montserrat';
 `
 
 //
@@ -169,15 +171,16 @@ export const AccommodationGalleryContainer = styled.div`
 //
 //
 
-export const HeaderContainer = styled.header`
-  background-color: ${colors.secondary};
-  padding: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
+// export const HeaderContainer = styled.header`
+//   background-color: ${colors.secondary};
+//   padding: 30px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// `
 
 export const NavContainer = styled.nav``
+
 
 export const FooterContainer = styled.footer`
   background-color: ${colors.tertiary};
