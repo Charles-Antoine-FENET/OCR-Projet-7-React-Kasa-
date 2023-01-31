@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import FooterLogo from '../../assets/img/logo_secondary.png'
-import kasaTexts from '../atoms/texts'
+import kasaTexts from '../../datas/texts'
 import styles from './Footer.module.scss'
 
 function Footer() {

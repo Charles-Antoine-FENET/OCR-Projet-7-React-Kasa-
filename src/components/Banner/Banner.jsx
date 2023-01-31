@@ -1,4 +1,4 @@
-import kasaTexts from '../atoms/texts'
+import kasaTexts from '../../datas/texts'
 import styles from './Banner.module.scss'
 
 function HomeBanner() {

@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import kasaTexts from '../atoms/texts'
+import kasaTexts from '../../datas/texts'
 import styles from './NavContainer.module.scss'
 
 export default function NavContainer() {

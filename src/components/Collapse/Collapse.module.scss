@@ -1,10 +1,10 @@
 .collapseContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: auto;
-  border: 2px solid red;
+  margin: 30px 100px;
+}
+
+.collapseTitle {
+  border-radius: 5px;
+  color: var(--secondary);
   background-color: var(--primary);
   padding: 15px;
 
@@ -16,7 +16,6 @@
 .collapseDetails {
   background-color: var(--darkGrey);
   padding: 40px;
-  margin: 0px;
   font-size: 24px;
   color: var(--primary);
 }
