@@ -5,7 +5,7 @@ import styles from './Header.module.scss'
 
 export default function Header() {
   return (
-    <header className={`${styles.headerContainer} d-flex flex-row align-items-center`}>
+    <header className={`${styles.headerContainer} d-flex flex-row align-items-center wrapper`}>
       <Link to="/">
         <img src={LogoHeader} alt="" />
       </Link>
