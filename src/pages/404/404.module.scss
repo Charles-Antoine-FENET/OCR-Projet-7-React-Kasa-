@@ -1,0 +1,20 @@
+.error {
+  color: var(--primary);
+  h1 {
+    padding-top: 70px;
+    font-weight: 700;
+    font-size: 288px;
+  }
+  h2 {
+    font-size: 36px;
+    font-weight: 400;
+  }
+  a {
+    padding: 182px 0px 190px 0px;
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+  }
+}

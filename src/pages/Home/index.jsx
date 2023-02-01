@@ -6,7 +6,7 @@ import kasaTexts from '../../datas/texts'
 function Home() {
   return (
     <main className="wrapper">
-      <Banner title={kasaTexts.HomeHeadingTitle} image={homeBannerImg}/>
+      <Banner title={kasaTexts.HomeHeadingTitle} image={homeBannerImg} />
       <HomeGallery />
     </main>
   )

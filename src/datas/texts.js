@@ -2,9 +2,13 @@ const kasaTexts = {
   navHome: 'Accueil',
   navAbout: 'A Propos',
   HomeHeadingTitle: 'Chez-vous, partout et ailleurs',
-  error: 404,
-  errorMessage: "Oups! La page que vous demandez n'héxiste pas.",
-  errorFallback: "Retourner sur la page d'accueil",
+  error: 
+    {
+      title: 404,
+      message: "Oups! La page que vous demandez n'existe pas.",
+      fallBack: "Retourner sur la page d'accueil.",
+    }
+  ,
   copyrightTxt: '© 2020 Kasa. All rights reserved',
   logoAlt: 'Logo Kasa',
   collapsesTexts: [

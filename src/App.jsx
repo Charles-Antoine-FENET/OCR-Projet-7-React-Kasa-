@@ -5,21 +5,20 @@ import Accommodation from './pages/Accomodation'
 import About from './pages/About'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-// import {GlobalStyle} from './components/atoms/index'
+import Error from './pages/404/404'
 
 
 function App() {
   return (
     <BrowserRouter>
-      {/* <GlobalStyle> */}
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/accommodation" element={<Accommodation />} />
           <Route path="/about" element={<About />} />
+          <Route path="/*" element={<Error />} />
         </Routes>
         <Footer />
-      {/* </GlobalStyle> */}
     </BrowserRouter>
   )
 }
