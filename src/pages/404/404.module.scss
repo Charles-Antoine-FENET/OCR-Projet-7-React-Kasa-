@@ -1,5 +1,6 @@
 .error {
   color: var(--primary);
+  text-align: center;
   h1 {
     padding-top: 70px;
     font-weight: 700;
@@ -13,7 +14,6 @@
     padding: 182px 0px 190px 0px;
     color: var(--primary);
     font-weight: 400;
-    font-size: 18px;
     text-decoration: underline;
     text-decoration-color: var(--primary);
   }

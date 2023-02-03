@@ -5,7 +5,7 @@ import aboutBannerImg from '../../assets/img/aboutBanner.jpg'
 
 function About() {
   return (
-    <main className="wrapper fullScreen">
+    <main className="wrapper">
       <Banner title={''} image={aboutBannerImg} />
       <ul>
         {kasaTexts.collapsesTexts.map((i) => (

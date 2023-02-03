@@ -9,7 +9,7 @@ function HomeGallery() {
       className={`${styles.cardsContainer} d-flex flex-wrap align-items-center justify-content-space-around`}
     >
       {dataFromApi.map((i) => (
-        <Card key={i.id} title={i.title} image={i.cover} />
+        <Card id={i.id} key={i.id} title={i.title} image={i.cover} />
       ))}
     </ul>
   )

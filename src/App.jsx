@@ -7,18 +7,17 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Error from './pages/404/404'
 
-
 function App() {
   return (
     <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/accommodation" element={<Accommodation />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/*" element={<Error />} />
-        </Routes>
-        <Footer />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/accommodation/:id" element={<Accommodation />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/*" element={<Error />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
