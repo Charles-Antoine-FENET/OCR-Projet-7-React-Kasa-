@@ -8,9 +8,9 @@ function About() {
     <main className="wrapper">
       <Banner title={''} image={aboutBannerImg} />
       <ul>
-        {kasaTexts.collapsesTexts.map((i) => (
-          <Collapse key={i.id} title={i.title} details={i.details} />
-        ))}
+          {kasaTexts.collapsesTexts.map((i) => (
+            <Collapse key={i.id} title={i.title} details={i.details} />
+          ))}
       </ul>
     </main>
   )

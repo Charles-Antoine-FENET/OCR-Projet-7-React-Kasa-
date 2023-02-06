@@ -1,8 +1,8 @@
 import styles from '../../components/Tag/Tag.module.scss'
 
 
-function Tag() {
-  return <h2 className={styles.accommodationTag}>Coucou</h2>
+function Tag({key, title}) {
+  return (<h2 key= {key} className={`${styles.accommodationTag} mr-10`}>{title}</h2>)
 }
 
 export default Tag
