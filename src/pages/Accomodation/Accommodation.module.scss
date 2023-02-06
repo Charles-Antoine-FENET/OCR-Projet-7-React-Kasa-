@@ -1,10 +1,16 @@
-.detailsAccommodationContainer{
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-    column-gap: 30px;
-    li{
-        width: 50%;
-        margin : 30px 0px;
-    }
+.detailsAccommodationContainer {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  column-gap: 30px;
+  li {
+    width: 50%;
+    margin: 30px 0px;
+  }
+}
+.equipementsList > li {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0px;
+  margin: 2px ;
 }

@@ -32,9 +32,7 @@ function Collapse({title, details}) {
         />
       </div>
       <div className={styles.collapseDetails}>
-        <p>
           {details}
-        </p>
       </div>
     </li>
   )

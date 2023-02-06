@@ -9,7 +9,7 @@ function About() {
       <Banner title={''} image={aboutBannerImg} />
       <ul>
           {kasaTexts.collapsesTexts.map((i) => (
-            <Collapse key={i.id} title={i.title} details={i.details} />
+            <Collapse key={i.id} title={i.title} details={<p>{i.details}</p>} />
           ))}
       </ul>
     </main>

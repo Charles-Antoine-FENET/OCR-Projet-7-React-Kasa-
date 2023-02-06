@@ -5,7 +5,6 @@ import { useParams } from 'react-router-dom'
 import Collapse from '../../components/Collapse/Collapse'
 import styles from './Accommodation.module.scss'
 
-
 /**
  * This function use a template to creat the accommodation page
  * To know more about how to get the id from the url please read this documentation : https://reactrouter.com/en/main/hooks/use-params
@@ -17,11 +16,9 @@ function Accommodation() {
     (accommodation) => accommodation.id === id
   )
   console.log(accommodationData)
-  const equipementItems = accommodationData?.equipments.map(
-    (i, index) => {
-      return <li key={`equipment-${index}`}>{i}</li>
-    }
-  )
+  const equipementItems = accommodationData?.equipments.map((i, index) => {
+    return <li key={`equipment-${index}`}>{i}</li>
+  })
   return (
     <main className="wrapper">
       <SlideShow />
@@ -35,8 +32,16 @@ function Accommodation() {
           ))}
       </div>
       <div className={`${styles.detailsAccommodationContainer}`}>
-        <Collapse title="Description" details={accommodationData.description} />
-        <Collapse title="Equipements" details= {equipementItems}></Collapse>
+        <Collapse
+          title="Description"
+          details={<p>{accommodationData.description}</p>}
+        />
+        <Collapse
+          title="Equipements"
+          details={
+            <ul className={`${styles.equipementsList}`}>{equipementItems}</ul>
+          }
+        ></Collapse>
       </div>
     </main>
   )

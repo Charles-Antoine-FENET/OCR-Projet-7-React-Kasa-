@@ -1,5 +1,23 @@
 .container {
+  position: relative;
   height: 415px;
   border-radius: 15px;
-  background-color: var(--primary);
+  background-size: cover;
+  background-position: center;
+  img:hover{
+    cursor: pointer;
+  }
+}
+
+.accommodationArrowLeft {
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+}
+
+.accommodationArrowRight {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+
 }
