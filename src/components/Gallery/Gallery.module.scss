@@ -1,4 +1,8 @@
 .cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
     row-gap: 24px;
     column-gap: 40px;
     background-color: var(--lightGrey);

@@ -5,9 +5,9 @@ import styles from './Header.module.scss'
 
 export default function Header() {
   return (
-    <header className={`${styles.headerContainer} d-flex flex-row align-items-center wrapper`}>
+    <header className={`${styles.headerContainer} wrapper`}>
       <Link to="/">
-        <img src={LogoHeader} alt="" />
+        <img src={LogoHeader} alt="Logo Kasa" />
       </Link>
       <NavContainer />
     </header>

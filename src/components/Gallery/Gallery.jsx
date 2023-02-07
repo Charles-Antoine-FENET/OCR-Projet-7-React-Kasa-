@@ -6,7 +6,7 @@ import styles from './Gallery.module.scss'
 function HomeGallery() {
   return (
     <ul
-      className={`${styles.cardsContainer} d-flex flex-wrap align-items-center justify-content-space-around`}
+      className={styles.cardsContainer}
     >
       {dataFromApi.map((i) => (
         <Card id={i.id} key={i.id} title={i.title} image={i.cover} />

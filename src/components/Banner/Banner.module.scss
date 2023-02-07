@@ -1,14 +1,11 @@
 .bannerContainer {
-  border-radius: 25px;
-  height: 223px;
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-size: cover;
+  border-radius: 25px;
+  height: 223px;
   h1 {
-    font-family: 'Montserrat';
-    font-weight: 500;
     font-size: 48px;
     color: var(--secondary);
   }

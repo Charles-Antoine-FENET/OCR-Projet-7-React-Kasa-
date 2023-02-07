@@ -5,7 +5,7 @@ import styles from './Footer.module.scss'
 
 function Footer() {
   return (
-    <footer className={`${styles.footerContainer} d-flex flex-column align-items-center `}>
+    <footer className={styles.footerContainer}>
       <Link to="/">
         <img src={FooterLogo} alt={kasaTexts.logoAlt} />
       </Link>
