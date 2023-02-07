@@ -3,6 +3,7 @@ import dataFromApi from '../../datas/logements.json'
 import Tag from '../../components/Tag/Tag'
 import { useParams } from 'react-router-dom'
 import Collapse from '../../components/Collapse/Collapse'
+import Profil from '../../components/Profil/Profil'
 import styles from './Accommodation.module.scss'
 
 /**
@@ -20,17 +21,30 @@ function Accommodation() {
     return <li key={`equipment-${index}`}>{i}</li>
   })
   return (
-    <main className="wrapper">
+    <main className="wrapper fullScreen">
       <SlideShow />
-      <h1>{accommodationData.title}</h1>
-      <h2>{accommodationData.location}</h2>
-      <div className="d-flex">
-        {accommodationData.tags &&
-          accommodationData.tags.length > 0 &&
-          accommodationData.tags.map((tag, index) => (
-            <Tag key={`tag-${index}-${tag}`} title={tag} />
-          ))}
-      </div>
+      <section className={`${styles.locationHostContainer} d-flex justify-content-space-between`}>
+        <div className='d-flex flex-column justify-content-space-between'>
+          <div>
+            <h1>{accommodationData.title}</h1>
+            <h2>{accommodationData.location}</h2>
+          </div>
+          <div className="d-flex ">
+            {accommodationData.tags &&
+              accommodationData.tags.length > 0 &&
+              accommodationData.tags.map((tag, index) => (
+                <Tag key={`tag-${index}-${tag}`} title={tag} />
+              ))}
+          </div>
+        </div>
+
+        <Profil
+          profilPicture={accommodationData.host.picture}
+          profilName={accommodationData.host.name}
+          rating={parseFloat(accommodationData.rating)}
+        />
+      </section>
+
       <div className={`${styles.detailsAccommodationContainer}`}>
         <Collapse
           title="Description"

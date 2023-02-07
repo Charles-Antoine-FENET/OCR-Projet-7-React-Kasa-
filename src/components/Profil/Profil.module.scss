@@ -1,0 +1,15 @@
+.profilContainer{
+    row-gap: 25px;
+}
+.hostContainer{
+    color: var(--primary);
+    column-gap: 10px;
+    img{
+        border-radius: 100px;
+        height: 64px;
+    }
+    h2{
+        text-align: end ;
+        width:min-content;
+    }
+}
