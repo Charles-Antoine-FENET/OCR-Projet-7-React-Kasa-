@@ -1,0 +1,11 @@
+.counter{
+    position: absolute;
+    bottom: 0px;
+    color: var(--secondary);
+    p{
+        font-size: 18px;
+    }
+    @media screen and (max-width: 720px) {
+        display: none;
+      }
+}

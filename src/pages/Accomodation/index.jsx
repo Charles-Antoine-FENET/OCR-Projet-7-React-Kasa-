@@ -1,4 +1,4 @@
-import SlideShow from '../../components/SlideShow/SlideSow'
+import SlideShow from '../../components/SlideShow/SlideShow'
 import dataFromApi from '../../datas/logements.json'
 import Tag from '../../components/Tag/Tag'
 import { useParams } from 'react-router-dom'

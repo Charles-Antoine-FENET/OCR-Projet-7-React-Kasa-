@@ -4,6 +4,7 @@ import arrowRight from '../../assets/img/arrowRight.png'
 import dataFromApi from '../../datas/logements.json'
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
+import Counter from './Counter'
 
 function SlideShow() {
   // recupération de min id d'appartement
@@ -16,7 +17,8 @@ function SlideShow() {
 
   // Mettre un etat sur mon backgroundimage ou un index
   const [accommodationPictureIndex, setAccommodationPictureIndex] = useState(0)
-
+  const arrayPictures = accommodationData.pictures
+  console.log(arrayPictures.length)
 
   return (
     <div
@@ -25,9 +27,10 @@ function SlideShow() {
         backgroundImage: `url(${accommodationData.pictures[accommodationPictureIndex]})`,
       }}
     >
+      <Counter index={accommodationPictureIndex +1} total={arrayPictures.length}/>
       {accommodationPictureIndex > 0 && (
         <img
-          className={`${styles.accommodationArrowLeft}`}
+          className={styles.accommodationArrowLeft}
           onClick={() => {
             if (accommodationPictureIndex > 0) {
               setAccommodationPictureIndex(accommodationPictureIndex - 1)
