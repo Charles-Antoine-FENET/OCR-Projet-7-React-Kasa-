@@ -1,21 +1,32 @@
-.profilContainer{
-    display:flex;
-    flex-direction: column;
-    align-items: flex-end;
-    row-gap: 25px;
-}
-.hostContainer{
-    display: flex;
+.profilContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 25px;
+  @media screen and (max-width: 720px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-end;
-    color: var(--primary);
-    column-gap: 10px;
-    img{
-        border-radius: 100px;
-        height: 64px;
+  }
+}
+.hostContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--primary);
+  column-gap: 10px;
+  img {
+    border-radius: 100px;
+    height: 64px;
+    @media screen and (max-width: 720px) {
+      height: 32px;
     }
-    h2{
-        text-align: end ;
-        width:min-content;
+  }
+  h2 {
+    text-align: end;
+    width: min-content;
+    @media screen and (max-width: 720px) {
+      font-size: 12px;
     }
+  }
 }

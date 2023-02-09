@@ -22,13 +22,13 @@ function Accommodation() {
   return (
     <main className="wrapper fullScreen">
       <SlideShow />
-      <section className={`${styles.locationHostContainer} d-flex justify-content-space-between`}>
-        <div className='d-flex flex-column justify-content-space-between'>
+      <section className={styles.locationHostContainer}>
+        <div className={styles.accommodationHeadings}>
           <div>
             <h1>{accommodationData.title}</h1>
             <h2>{accommodationData.location}</h2>
           </div>
-          <div className="d-flex ">
+          <div className={styles.accommodationTags}>
             {accommodationData.tags &&
               accommodationData.tags.length > 0 &&
               accommodationData.tags.map((tag, index) => (
@@ -44,7 +44,7 @@ function Accommodation() {
         />
       </section>
 
-      <div className={`${styles.detailsAccommodationContainer}`}>
+      <div className={styles.detailsAccommodationContainer}>
         <Collapse
           title="Description"
           details={<p>{accommodationData.description}</p>}
@@ -52,7 +52,7 @@ function Accommodation() {
         <Collapse
           title="Equipements"
           details={
-            <ul className={`${styles.equipementsList}`}>{equipementItems}</ul>
+            <ul className={styles.equipementsList}>{equipementItems}</ul>
           }
         ></Collapse>
       </div>

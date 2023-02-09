@@ -7,7 +7,10 @@
   border-radius: 15px;
   background-size: cover;
   background-position: center;
-  img:hover{
+  @media screen and (max-width: 720px) {
+    height: 255px;
+  }
+  img:hover {
     cursor: pointer;
   }
 }
@@ -16,11 +19,16 @@
   position: absolute;
   left: 0;
   margin-left: 20px;
+  @media screen and (max-width: 720px) {
+    height: 19.8px;
+  }
 }
 
 .accommodationArrowRight {
   position: absolute;
   right: 0;
   margin-right: 20px;
-
+  @media screen and (max-width: 720px) {
+    height: 19.8px;
+  }
 }

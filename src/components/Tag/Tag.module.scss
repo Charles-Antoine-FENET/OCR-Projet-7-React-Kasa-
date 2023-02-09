@@ -1,8 +1,12 @@
-.accommodationTag{
-    font-size: 14px;
-    // display: inline-block;
-    border-radius: 10px;
-    padding: 5px 30px;
-    background-color: var(--primary);
-    color: var(--secondary);
+.accommodationTag {
+  font-size: 14px;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 5px 30px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  @media screen and (max-width: 720px) {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
 }

@@ -10,10 +10,20 @@
   color: var(--secondary);
   background-color: var(--primary);
   padding: 15px;
-
+  @media screen and (max-width: 720px) {
+    padding: 5px;
+    h2{
+      font-size: 13px;
+    }
+  }
   img {
     height: 14.06px;
     cursor: pointer;
+    @media screen and (max-width: 720px) {
+      height: 7px;
+      padding-right: 5px;
+      width: auto;
+    }
   }
 }
 
