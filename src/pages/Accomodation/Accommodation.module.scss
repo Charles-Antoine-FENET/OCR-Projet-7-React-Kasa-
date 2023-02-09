@@ -5,6 +5,7 @@
   color: var(--primary);
   @media screen and (max-width: 720px) {
     flex-direction: column;
+    padding: 15px 0px;
   }
 }
 
@@ -12,6 +13,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.accommodationTitles {
+  @media screen and (max-width: 720px) {
+    h1 {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 14px;
+    }
+  }
 }
 
 .accommodationTags {

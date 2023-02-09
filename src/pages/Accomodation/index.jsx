@@ -24,7 +24,7 @@ function Accommodation() {
       <SlideShow />
       <section className={styles.locationHostContainer}>
         <div className={styles.accommodationHeadings}>
-          <div>
+          <div className={styles.accommodationTitles}>
             <h1>{accommodationData.title}</h1>
             <h2>{accommodationData.location}</h2>
           </div>

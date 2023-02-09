@@ -6,7 +6,7 @@ function Card({ id, title, image }) {
     <li className={styles.accommodationCard}>
       <Link
         to={`accommodation/${id}`}
-        className={`${styles.styledCardLink} d-flex`}
+        className={styles.styledCardLink}
       >
         <img src={image} alt="" />
         <h2>{title}</h2>
