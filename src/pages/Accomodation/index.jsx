@@ -16,7 +16,6 @@ function Accommodation() {
   let accommodationData = dataFromApi.find(
     (accommodation) => accommodation.id === id
   )
-  console.log(accommodationData)
   const equipementItems = accommodationData?.equipments.map((i, index) => {
     return <li key={`equipment-${index}`}>{i}</li>
   })

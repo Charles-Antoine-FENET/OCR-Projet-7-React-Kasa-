@@ -9,7 +9,7 @@ function SlideShow() {
   // recupération de min id d'appartement
   let { id } = useParams()
 
-  // recupéraztion des informations concernant cet apparatement
+  // recupération des informations concernant cet apparatement
   let accommodationData = dataFromApi.find(
     (accommodation) => accommodation.id === id
   )
@@ -17,9 +17,10 @@ function SlideShow() {
   // Mettre un etat sur mon backgroundimage ou un index
   const [accommodationPictureIndex, setAccommodationPictureIndex] = useState(0)
 
+
   return (
     <div
-      className={`${styles.container} d-flex justify-content-center align-items-center`}
+      className={styles.container}
       style={{
         backgroundImage: `url(${accommodationData.pictures[accommodationPictureIndex]})`,
       }}

@@ -5,8 +5,16 @@
   background-size: cover;
   border-radius: 25px;
   height: 223px;
+  @media screen and (max-width: 720px) {
+    justify-content: flex-start;
+    height: 111px;
+  }
   h1 {
     font-size: 48px;
     color: var(--secondary);
+    @media screen and (max-width: 720px) {
+      font-size: 24px;
+      padding: 0px 16px;
+    }
   }
 }

@@ -1,7 +1,13 @@
 .profilContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
     row-gap: 25px;
 }
 .hostContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     color: var(--primary);
     column-gap: 10px;
     img{
