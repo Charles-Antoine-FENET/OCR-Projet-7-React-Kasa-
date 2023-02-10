@@ -58,4 +58,8 @@
   font-weight: 400;
   padding: 0px;
   margin: 2px;
+  @media screen and (max-width: 720px) {
+    font-size: 12px;
+    margin: 0px;
+  }
 }
