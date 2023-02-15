@@ -7,6 +7,7 @@ import styles from '../SlideShow/Counter.module.scss'
 // afficher {index}/{tableauPhoto.lenght}
 
 function Counter({index, total}){
+    if (total > 1)
     return <div className={styles.counter}><p>{index}/{total}</p></div>
 }
 

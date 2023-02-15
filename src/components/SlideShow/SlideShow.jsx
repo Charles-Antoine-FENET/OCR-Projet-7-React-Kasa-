@@ -30,7 +30,7 @@ function SlideShow() {
         index={accommodationPictureIndex + 1}
         total={arrayPictures.length}
       />
-
+      
       <img
         className={styles.accommodationArrowLeft}
         onClick={() => {

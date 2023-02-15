@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import Collapse from '../../components/Collapse/Collapse'
 import Profil from '../../components/Profil/Profil'
 import styles from './Accommodation.module.scss'
+import Error from '../404/404'
 
 /**
  * This function use a template to creat the accommodation page
@@ -19,45 +20,49 @@ function Accommodation() {
   const equipementItems = accommodationData?.equipments.map((i, index) => {
     return <li key={`equipment-${index}`}>{i}</li>
   })
-  return (
-    <main className="wrapper fullScreen">
-      <SlideShow />
-      <section className={styles.locationHostContainer}>
-        <div className={styles.accommodationHeadings}>
-          <div className={styles.accommodationTitles}>
-            <h1>{accommodationData.title}</h1>
-            <h2>{accommodationData.location}</h2>
+  if (accommodationData) {
+    return (
+      <main className="wrapper fullScreen">
+        <SlideShow />
+        <section className={styles.locationHostContainer}>
+          <div className={styles.accommodationHeadings}>
+            <div className={styles.accommodationTitles}>
+              <h1>{accommodationData.title}</h1>
+              <h2>{accommodationData.location}</h2>
+            </div>
+            <div className={styles.accommodationTags}>
+              {accommodationData.tags &&
+                accommodationData.tags.length > 0 &&
+                accommodationData.tags.map((tag, index) => (
+                  <Tag key={`tag-${index}-${tag}`} title={tag} />
+                ))}
+            </div>
           </div>
-          <div className={styles.accommodationTags}>
-            {accommodationData.tags &&
-              accommodationData.tags.length > 0 &&
-              accommodationData.tags.map((tag, index) => (
-                <Tag key={`tag-${index}-${tag}`} title={tag} />
-              ))}
-          </div>
+
+          <Profil
+            profilPicture={accommodationData.host.picture}
+            profilName={accommodationData.host.name}
+            rating={parseFloat(accommodationData.rating)}
+          />
+        </section>
+
+        <div className={styles.detailsAccommodationContainer}>
+          <Collapse
+            title="Description"
+            details={<p>{accommodationData.description}</p>}
+          />
+          <Collapse
+            title="Equipements"
+            details={
+              <ul className={styles.equipementsList}>{equipementItems}</ul>
+            }
+          ></Collapse>
         </div>
-
-        <Profil
-          profilPicture={accommodationData.host.picture}
-          profilName={accommodationData.host.name}
-          rating={parseFloat(accommodationData.rating)}
-        />
-      </section>
-
-      <div className={styles.detailsAccommodationContainer}>
-        <Collapse
-          title="Description"
-          details={<p>{accommodationData.description}</p>}
-        />
-        <Collapse
-          title="Equipements"
-          details={
-            <ul className={styles.equipementsList}>{equipementItems}</ul>
-          }
-        ></Collapse>
-      </div>
-    </main>
-  )
+      </main>
+    )
+  } else {
+    return <Error />
+  }
 }
 
 export default Accommodation
