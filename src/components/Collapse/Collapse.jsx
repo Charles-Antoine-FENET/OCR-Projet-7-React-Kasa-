@@ -7,9 +7,12 @@ function Collapse({ title, details }) {
 
   return (
     <li className={styles.collapseContainer}>
-      <div className={styles.collapseTitle}>
+      <div
+        className={styles.collapseTitle}
+        onClick={() => setIsClosed(!isClosed)}
+      >
         <h2>{title}</h2>
-        <ArrowUpDown isClosed={isClosed} onClick={() => setIsClosed(!isClosed)} />
+        <ArrowUpDown isClosed={isClosed} />
       </div>
       {!isClosed && <div className={styles.collapseDetails}>{details}</div>}
     </li>
