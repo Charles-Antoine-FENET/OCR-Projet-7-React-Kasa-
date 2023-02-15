@@ -19,44 +19,57 @@ function SlideShow() {
   const [accommodationPictureIndex, setAccommodationPictureIndex] = useState(0)
   const arrayPictures = accommodationData.pictures
 
-  return (
-    <div
-      className={styles.container}
-      style={{
-        backgroundImage: `url(${accommodationData.pictures[accommodationPictureIndex]})`,
-      }}
-    >
-      <Counter
-        index={accommodationPictureIndex + 1}
-        total={arrayPictures.length}
-      />
-      
-      <img
-        className={styles.accommodationArrowLeft}
-        onClick={() => {
-          if (accommodationPictureIndex > 0) {
-            setAccommodationPictureIndex(accommodationPictureIndex - 1)
-          }
+  if (arrayPictures.length > 1) {
+    return (
+      <div
+        className={styles.container}
+        style={{
+          backgroundImage: `url(${accommodationData.pictures[accommodationPictureIndex]})`,
         }}
-        src={arrowLeft}
-        alt="flèche de gauche"
-      />
+      >
+        <Counter
+          index={accommodationPictureIndex + 1}
+          total={arrayPictures.length}
+        />
 
-      <img
-        className={`${styles.accommodationArrowRight}`}
-        onClick={() => {
-          if (
-            accommodationPictureIndex <
-            accommodationData.pictures.length - 1
-          ) {
-            setAccommodationPictureIndex(accommodationPictureIndex + 1)
-          }
+        <img
+          className={styles.accommodationArrowLeft}
+          onClick={() => {
+            if (accommodationPictureIndex > 0) {
+              setAccommodationPictureIndex(accommodationPictureIndex - 1)
+            }
+          }}
+          src={arrowLeft}
+          alt="flèche de gauche"
+        />
+
+        <img
+          className={styles.accommodationArrowRight}
+          onClick={() => {
+            if (
+              accommodationPictureIndex <
+              accommodationData.pictures.length - 1
+            ) {
+              setAccommodationPictureIndex(accommodationPictureIndex + 1)
+            }
+          }}
+          src={arrowRight}
+          alt="flèche de Droite"
+        />
+      </div>
+    )
+  } else{
+    return (
+      <div
+        className={styles.container}
+        style={{
+          backgroundImage: `url(${accommodationData.pictures[accommodationPictureIndex]})`,
         }}
-        src={arrowRight}
-        alt="flèche de Droite"
-      />
-    </div>
-  )
+      >
+        
+      </div>
+    )
+  }
 }
 
 export default SlideShow
