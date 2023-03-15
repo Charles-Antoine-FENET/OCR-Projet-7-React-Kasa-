@@ -7,15 +7,15 @@ import { useState } from 'react'
 import Counter from './Counter'
 
 function SlideShow() {
-  // recupération de min id d'appartement
+  // get the accommodation id
   let { id } = useParams()
 
-  // recupération des informations concernant cet apparatement
+  // get data about this accommodation
   let accommodationData = dataFromApi.find(
     (accommodation) => accommodation.id === id
   )
 
-  // Mettre un etat sur mon backgroundimage ou un index
+  // Init the sate 
   const [accommodationPictureIndex, setAccommodationPictureIndex] = useState(0)
   const arrayPictures = accommodationData.pictures
 

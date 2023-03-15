@@ -32,7 +32,6 @@ function Accommodation() {
             </div>
             <div className={styles.accommodationTags}>
               {accommodationData.tags &&
-                accommodationData.tags.length > 0 &&
                 accommodationData.tags.map((tag, index) => (
                   <Tag key={`tag-${index}-${tag}`} title={tag} />
                 ))}

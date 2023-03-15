@@ -10,7 +10,7 @@ function HomeGallery() {
     >
       {dataFromApi.map((i) => (
         <Card id={i.id} key={i.id} title={i.title} image={i.cover} />
-      ))}
+        ))}
     </ul>
   )
 }
