@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/OCR-Projet-7-React-Kasa-/static/css/main.b01fe30a.css",
+    "main.js": "/OCR-Projet-7-React-Kasa-/static/js/main.7dab1cfa.js",
+    "static/media/aboutBanner.jpg": "/OCR-Projet-7-React-Kasa-/static/media/aboutBanner.6ed5524d618bfca62daf.jpg",
+    "static/media/homeBanner.jpg": "/OCR-Projet-7-React-Kasa-/static/media/homeBanner.ef48e8d7658641b1dab9.jpg",
+    "index.html": "/OCR-Projet-7-React-Kasa-/index.html",
+    "main.b01fe30a.css.map": "/OCR-Projet-7-React-Kasa-/static/css/main.b01fe30a.css.map",
+    "main.7dab1cfa.js.map": "/OCR-Projet-7-React-Kasa-/static/js/main.7dab1cfa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b01fe30a.css",
+    "static/js/main.7dab1cfa.js"
+  ]
+}
